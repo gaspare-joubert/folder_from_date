@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SortThosePicsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="stp_contact_us">
+          <Key>
+            <PropertyRef Name="contact_us_id" />
+          </Key>
+          <Property Name="contact_us_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="contact_us_guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="contact_us_timestamp" Type="datetime" Nullable="false" />
+          <Property Name="contact_us_language" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact_us_app_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact_us_app_guid" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact_us_app_version" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="contact_us_user_fname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="contact_us_user_surname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="contact_us_user_email" Type="nvarchar" MaxLength="254" Nullable="false" />
+          <Property Name="contact_us_subject" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="contact_us_message" Type="nvarchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stp_download_counter">
+          <Key>
+            <PropertyRef Name="dwnld_cntr_id" />
+          </Key>
+          <Property Name="dwnld_cntr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dwnld_cntr_downloads_total" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stp_try01_for_free_win">
+          <Key>
+            <PropertyRef Name="try01_win_id" />
+          </Key>
+          <Property Name="try01_win_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="try01_win_guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="try01_win_timestamp" Type="datetime" Nullable="false" />
+          <Property Name="try01_win_language" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try01_win_app_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try01_win_app_guid" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try01_win_app_version" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try01_win_user_fname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="try01_win_user_surname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="try01_win_user_email" Type="nvarchar" MaxLength="254" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stp_try02_for_free_mac">
+          <Key>
+            <PropertyRef Name="try02_mac_id" />
+          </Key>
+          <Property Name="try02_mac_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="try02_mac_guid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="try02_mac_timestamp" Type="datetime" Nullable="false" />
+          <Property Name="try02_mac_language" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try02_mac_app_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try02_mac_app_guid" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try02_mac_app_version" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="try02_mac_user_fname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="try02_mac_user_surname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="try02_mac_user_email" Type="nvarchar" MaxLength="254" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SortThosePicsModelStoreContainer">
+          <EntitySet Name="stp_contact_us" EntityType="Self.stp_contact_us" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stp_download_counter" EntityType="Self.stp_download_counter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stp_try01_for_free_win" EntityType="Self.stp_try01_for_free_win" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="stp_try02_for_free_mac" EntityType="Self.stp_try02_for_free_mac" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SortThosePicsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="stp_download_counter">
+          <Key>
+            <PropertyRef Name="dwnld_cntr_id" />
+          </Key>
+          <Property Name="dwnld_cntr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dwnld_cntr_downloads_total" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stp_try01_for_free_win">
+          <Key>
+            <PropertyRef Name="try01_win_id" />
+          </Key>
+          <Property Name="try01_win_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="try01_win_guid" Type="Guid" Nullable="false" />
+          <Property Name="try01_win_timestamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="try01_win_language" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_app_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_app_guid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_app_version" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_user_fname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_user_surname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="try01_win_user_email" Type="String" MaxLength="254" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SortThosePicsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="stp_download_counter" EntityType="Self.stp_download_counter" />
+          <EntitySet Name="stp_try01_for_free_win" EntityType="Self.stp_try01_for_free_win" />
+          <EntitySet Name="stp_try02_for_free_mac" EntityType="SortThosePicsModel.stp_try02_for_free_mac" />
+          <EntitySet Name="stp_contact_us" EntityType="SortThosePicsModel.stp_contact_us" />
+        </EntityContainer>
+        <EntityType Name="stp_try02_for_free_mac">
+          <Key>
+            <PropertyRef Name="try02_mac_id" />
+          </Key>
+          <Property Name="try02_mac_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="try02_mac_guid" Type="Guid" Nullable="false" />
+          <Property Name="try02_mac_timestamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="try02_mac_language" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_app_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_app_guid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_app_version" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_user_fname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_user_surname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="try02_mac_user_email" Type="String" Nullable="false" MaxLength="254" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="stp_contact_us">
+          <Key>
+            <PropertyRef Name="contact_us_id" />
+          </Key>
+          <Property Name="contact_us_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="contact_us_guid" Type="Guid" Nullable="false" />
+          <Property Name="contact_us_timestamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="contact_us_language" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_app_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_app_guid" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_app_version" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_user_fname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_user_surname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_user_email" Type="String" Nullable="false" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_subject" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="contact_us_message" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SortThosePicsModelStoreContainer" CdmEntityContainer="SortThosePicsEntities">
+          <EntitySetMapping Name="stp_download_counter">
+            <EntityTypeMapping TypeName="SortThosePicsModel.stp_download_counter">
+              <MappingFragment StoreEntitySet="stp_download_counter">
+                <ScalarProperty Name="dwnld_cntr_id" ColumnName="dwnld_cntr_id" />
+                <ScalarProperty Name="dwnld_cntr_downloads_total" ColumnName="dwnld_cntr_downloads_total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stp_try01_for_free_win">
+            <EntityTypeMapping TypeName="SortThosePicsModel.stp_try01_for_free_win">
+              <MappingFragment StoreEntitySet="stp_try01_for_free_win">
+                <ScalarProperty Name="try01_win_id" ColumnName="try01_win_id" />
+                <ScalarProperty Name="try01_win_guid" ColumnName="try01_win_guid" />
+                <ScalarProperty Name="try01_win_timestamp" ColumnName="try01_win_timestamp" />
+                <ScalarProperty Name="try01_win_language" ColumnName="try01_win_language" />
+                <ScalarProperty Name="try01_win_app_name" ColumnName="try01_win_app_name" />
+                <ScalarProperty Name="try01_win_app_guid" ColumnName="try01_win_app_guid" />
+                <ScalarProperty Name="try01_win_app_version" ColumnName="try01_win_app_version" />
+                <ScalarProperty Name="try01_win_user_fname" ColumnName="try01_win_user_fname" />
+                <ScalarProperty Name="try01_win_user_surname" ColumnName="try01_win_user_surname" />
+                <ScalarProperty Name="try01_win_user_email" ColumnName="try01_win_user_email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stp_try02_for_free_mac">
+            <EntityTypeMapping TypeName="SortThosePicsModel.stp_try02_for_free_mac">
+              <MappingFragment StoreEntitySet="stp_try02_for_free_mac">
+                <ScalarProperty Name="try02_mac_user_email" ColumnName="try02_mac_user_email" />
+                <ScalarProperty Name="try02_mac_user_surname" ColumnName="try02_mac_user_surname" />
+                <ScalarProperty Name="try02_mac_user_fname" ColumnName="try02_mac_user_fname" />
+                <ScalarProperty Name="try02_mac_app_version" ColumnName="try02_mac_app_version" />
+                <ScalarProperty Name="try02_mac_app_guid" ColumnName="try02_mac_app_guid" />
+                <ScalarProperty Name="try02_mac_app_name" ColumnName="try02_mac_app_name" />
+                <ScalarProperty Name="try02_mac_language" ColumnName="try02_mac_language" />
+                <ScalarProperty Name="try02_mac_timestamp" ColumnName="try02_mac_timestamp" />
+                <ScalarProperty Name="try02_mac_guid" ColumnName="try02_mac_guid" />
+                <ScalarProperty Name="try02_mac_id" ColumnName="try02_mac_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stp_contact_us">
+            <EntityTypeMapping TypeName="SortThosePicsModel.stp_contact_us">
+              <MappingFragment StoreEntitySet="stp_contact_us">
+                <ScalarProperty Name="contact_us_message" ColumnName="contact_us_message" />
+                <ScalarProperty Name="contact_us_subject" ColumnName="contact_us_subject" />
+                <ScalarProperty Name="contact_us_user_email" ColumnName="contact_us_user_email" />
+                <ScalarProperty Name="contact_us_user_surname" ColumnName="contact_us_user_surname" />
+                <ScalarProperty Name="contact_us_user_fname" ColumnName="contact_us_user_fname" />
+                <ScalarProperty Name="contact_us_app_version" ColumnName="contact_us_app_version" />
+                <ScalarProperty Name="contact_us_app_guid" ColumnName="contact_us_app_guid" />
+                <ScalarProperty Name="contact_us_app_name" ColumnName="contact_us_app_name" />
+                <ScalarProperty Name="contact_us_language" ColumnName="contact_us_language" />
+                <ScalarProperty Name="contact_us_timestamp" ColumnName="contact_us_timestamp" />
+                <ScalarProperty Name="contact_us_guid" ColumnName="contact_us_guid" />
+                <ScalarProperty Name="contact_us_id" ColumnName="contact_us_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

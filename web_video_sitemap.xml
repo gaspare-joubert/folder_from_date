@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.sort-those-pics.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <video:video>
+      <video:title>Sort Photos By Date Taken</video:title>
+      <video:description>Sort Those Pics will sort your photos by date taken into folders, quickly and easily.</video:description>
+      <video:thumbnail_loc>http://www.sort-those-pics.com/images/sort_photos_by_date_taken_thmb.png</video:thumbnail_loc>
+      <video:player_loc>http://www.sort-those-pics.com/videos/sort_photos_by_date_taken.mp4</video:player_loc>
+    </video:video>
+  </url>
+</urlset>

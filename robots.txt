@@ -1,0 +1,22 @@
+# Rule 1
+User-agent: *
+Disallow: /Account/
+Disallow: /App_Code/
+Disallow: /App_Data/
+Disallow: /App_Readme/
+Disallow: /bin/
+Disallow: /Content/
+Disallow: /css/
+Disallow: /FileDls/
+Disallow: /FileDownloads/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /Resources/
+Disallow: /Scripts/
+
+# Rule 2
+User-agent: *
+Allow: /Resources/privacy_policy/
+Allow: /Resources/terms_&_conditions/
+
+Sitemap: http://sort-those-pics.com/sitemap.xml
