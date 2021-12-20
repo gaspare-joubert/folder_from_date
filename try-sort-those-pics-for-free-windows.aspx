@@ -208,7 +208,7 @@
                                 document.write(year)
                             </script>
                             Gasco Solutions (Pty) Ltd. All Rights Reserved ||<a href="Resources/privacy_policy/gasco_solutions_privacy_policy.pdf" target="_blank"> Privacy Policy </a>||
-			    <a href="Resources/terms_&_conditions/gasco_solutions_terms_&_conditions.pdf" target="_blank"> Terms & Conditions </a>||
+			    <a href="Resources/terms_and_conditions/gasco_solutions_terms_and_conditions.pdf" target="_blank"> Terms & Conditions </a>||
 			    <a href="https://www.top4download.com/sort-those-pics/xwnejwlk.html" target="_blank"><img src="https://cdn.top4download.com/img/clean_88x31.gif" alt="Free Software Download - Top 4 Download" border="0" width="88" height="31"/></a><br>                        
 			</p>
                     </div>
